@@ -1,4 +1,3 @@
-
 <header>
     <div class="header">
         <div class="header__logo">
@@ -29,7 +28,8 @@
             <div class="section-events__title">
                 <div class="section-events__title-txt">
                     <h2>Что будет</h2>
-                    <p>Презентация <strong>новой версии</strong> BPM-системы ELMA4 и <strong>конструктора интерфейсов</strong> для быстрого создания бизнес-приложений!</p>
+                    <p>Презентация <strong>новой версии</strong> BPM-системы ELMA4 и <strong>конструктора
+                            интерфейсов</strong> для быстрого создания бизнес-приложений!</p>
                 </div>
                 <div class="section-events__title-img">
                     <img src="#" alt="Презентация новой версии">
@@ -78,7 +78,8 @@
     <section class="section-up section-up_theme_blue">
         <div class="section-up__text">
             <h2>Меняйся легче!</h2>
-            <p>Участники конференции первыми увидят обновленный интерфейс, узнают про новые возможности и оценят эффективность быстрых инструментов автоматизации.</p>
+            <p>Участники конференции первыми увидят обновленный интерфейс, узнают про новые возможности и оценят
+                эффективность быстрых инструментов автоматизации.</p>
             <a href="" class="">Участвовать бесплатно</a>
         </div>
         <div class="section-up__img"></div>
@@ -86,7 +87,9 @@
 
     <section class="section-program" id="program">
         <h2>Программа</h2>
-        <p>Спикеры разберут практические кейсы создания полноценных бизнес-риложений и автоматизации процессов на базе ELMA. Представители крупнейших компаний покажут свои решения и расскажут об истории успеха цифровой трансформации на ELMA BPM.</p>
+        <p>Спикеры разберут практические кейсы создания полноценных бизнес-риложений и автоматизации процессов на базе
+            ELMA. Представители крупнейших компаний покажут свои решения и расскажут об истории успеха цифровой
+            трансформации на ELMA BPM.</p>
         <ul class="section-program__list">
             <li class="section-program__item">
                 <div class="black-item">
@@ -288,7 +291,9 @@
     <section class="section-organizer">
         <h2>Организатор</h2>
         <div class="section-organizer__wrap">
-            <p>Компания ELMA существует на IT-рынке уже более 10 лет. Свыше 2000 компаний из различных отраслей автоматизировали бизнес-процессы с помощью cистемы. ELMA является самой внедряемой BPM-системой в СНГ.</p>
+            <p>Компания ELMA существует на IT-рынке уже более 10 лет. Свыше 2000 компаний из различных отраслей
+                автоматизировали бизнес-процессы с помощью cистемы. ELMA является самой внедряемой BPM-системой в
+                СНГ.</p>
             <img src="#" alt="ELMA">
         </div>
     </section>
@@ -312,7 +317,8 @@
                     <input class="registration__input" type="text" name="name" required placeholder="Имя и фамилия">
                 </label>
                 <label class="registration__label">
-                    <input class="registration__input" type="email" name="email" required placeholder="Электронная почта">
+                    <input class="registration__input" type="email" name="email" required
+                           placeholder="Электронная почта">
                 </label>
                 <label class="registration__label">
                     <input class="registration__input" type="tel" name="phone" required placeholder="Телефон">
@@ -325,7 +331,9 @@
                 </label>
                 <label class="registration__label">
                     <select class="registration__input registration__input--select" name="company_size" required="">
-                        <option value="" disabled="disabled" selected="selected" class="form-popup__select-item" hidden="">Численность компании</option>
+                        <option value="" disabled="disabled" selected="selected" class="form-popup__select-item"
+                                hidden="">Численность компании
+                        </option>
                         <option value="<20">До 20</option>
                         <option value="20-100">20-100</option>
                         <option value="101-500">101-500</option>
@@ -335,9 +343,17 @@
                 </label>
                 <div class="registration__group-submit">
                     <label class="registration__label registration__label--checkbox">
-                        <input class="registration__input registration__input--checkbox visually-hidden" type="checkbox" name="accept" required="">
-                        <span class="registration__label--icon" aria-label="Принимаю условия"></span> Я принимаю условия <a class="registration__accept-terms" href="/forms/user_agreement.html" target="_blank" rel="noopener">пользовательского соглашения</a> и <a class="registration__policy-confident" href="/forms/conf.html" target="_blank" rel="noopener">политики конфиденциальности</a> </label>
-                    <button class="btn-primary case-demonstration__submit registration__submit-unclosed" type="submit">Зарегистрироваться</button>
+                        <input class="registration__input registration__input--checkbox visually-hidden" type="checkbox"
+                               name="accept" required="">
+                        <span class="registration__label--icon" aria-label="Принимаю условия"></span> Я принимаю условия
+                        <a class="registration__accept-terms" href="/forms/user_agreement.html" target="_blank"
+                           rel="noopener">пользовательского соглашения</a> и <a class="registration__policy-confident"
+                                                                                href="/forms/conf.html" target="_blank"
+                                                                                rel="noopener">политики
+                            конфиденциальности</a> </label>
+                    <button class="btn-primary case-demonstration__submit registration__submit-unclosed" type="submit">
+                        Зарегистрироваться
+                    </button>
                 </div>
             </form>
         </div>
@@ -368,7 +384,9 @@
                     </div>
                 </div>
                 <div class="location__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1090.3952386372478!2d37.65301291918813!3d55.76384374260929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a8a2fd64daf%3A0x52e5c6dcc8ae4352!2z0KbQuNGE0YDQvtCy0L7QtSDQtNC10LvQvtCy0L7QtSDQv9GA0L7RgdGC0YDQsNC90YHRgtCy0L4!5e0!3m2!1sru!2sru!4v1585309424780!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1090.3952386372478!2d37.65301291918813!3d55.76384374260929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a8a2fd64daf%3A0x52e5c6dcc8ae4352!2z0KbQuNGE0YDQvtCy0L7QtSDQtNC10LvQvtCy0L7QtSDQv9GA0L7RgdGC0YDQsNC90YHRgtCy0L4!5e0!3m2!1sru!2sru!4v1585309424780!5m2!1sru!2sru"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
