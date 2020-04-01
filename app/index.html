@@ -4,33 +4,38 @@
     <meta charset="utf-8">
     <title>ElmaDaY</title>
     <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div class="header">
-        <div class="header__logo">
-            <p><span>Elma day </span>2020</p>
-            <p>Ежегодная практическая конференция</p>
+    <div class="header container">
+        <div class="header__wrap">
+            <div class="header__logo">
+                <p><span>Elma day </span>2020</p>
+                <p>Ежегодная практическая конференция</p>
+            </div>
+            <div class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#program">Программа</a></li>
+                    <li class="header__nav-item"><a href="#registration">Регистрация</a></li>
+                    <li class="header__nav-item"><a href="#location">Контакты</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#program">Программа</a></li>
-                <li class="header__nav-item"><a href="#registration">Регистрация</a></li>
-                <li class="header__nav-item"><a href="#location">Контакты</a></li>
-            </ul>
-        </div>
+        <section class="banner">
+            <div class="container">
+                <ul>
+                    <li>4 февраля, 2020</li>
+                    <li>ЦДП, Москва</li>
+                </ul>
+                <h1>ELMA4: новая low-code платформа для быстрого построения корпоративных приложений</h1>
+                <p>Меняйся легче!</p>
+                <a class="" href="#">Участвовать бесплатно</a>
+            </div>
+        </section>
     </div>
 </header>
 <main>
-    <section class="banner">
-        <ul>
-            <li>4 февраля, 2020</li>
-            <li>ЦДП, Москва</li>
-        </ul>
-        <h1>ELMA4: новая low-code платформа для быстрого построения корпоративных приложений</h1>
-        <p>Меняйся легче!</p>
-        <a class="" href="#">Участвовать бесплатно</a>
-    </section>
     <section class="container">
         <section class="section-events">
             <div class="section-events__title">
@@ -57,7 +62,7 @@
             </div>
         </section>
     </section>
-    <section class="section-users">
+    <section class="container section-users">
         <h2>Кому интересно</h2>
         <ul>
             <li>
@@ -82,7 +87,7 @@
             </li>
         </ul>
     </section>
-    <section class="section-up section-up_theme_blue">
+    <section class="container section-up section-up_theme_blue">
         <div class="section-up__text">
             <h2>Меняйся легче!</h2>
             <p>Участники конференции первыми увидят обновленный интерфейс, узнают про новые возможности и оценят
@@ -91,7 +96,7 @@
         </div>
         <div class="section-up__img"></div>
     </section>
-    <section class="section-program" id="program">
+    <section class="container section-program" id="program">
         <h2>Программа</h2>
         <p>Спикеры разберут практические кейсы создания полноценных бизнес-риложений и автоматизации процессов на базе
             ELMA. Представители крупнейших компаний покажут свои решения и расскажут об истории успеха цифровой
@@ -182,7 +187,7 @@
             </li>
         </ul>
     </section>
-    <section class="section-speackers">
+    <section class="container section-speackers">
         <div class="section-speackers__head">
             <h2>Спикеры</h2>
             <ul>
@@ -282,12 +287,12 @@
             </div>
         </div>
     </section>
-    <section class="section-up section-up_theme_blue">
+    <section class="container section-up section-up_theme_blue">
         <h2>Приходите и узнайте больше о возможностях ELMA4.</h2>
         <p>Зарегистрируйтесь прямо сейчас!</p>
         <a class="" href="">Участвовать бесплатно</a>
     </section>
-    <section class="section-organizer">
+    <section class="container section-organizer">
         <h2>Организатор</h2>
         <div class="section-organizer__wrap">
             <p>Компания ELMA существует на IT-рынке уже более 10 лет. Свыше 2000 компаний из различных отраслей
@@ -296,7 +301,7 @@
             <img alt="ELMA" src="#">
         </div>
     </section>
-    <section class="section-partners">
+    <section class="container section-partners">
         <h2>Информационные партнеры</h2>
         <ul class="section-partners__list">
             <li class="section-partners__item"><img alt="Bpm" src="#"></li>
@@ -306,7 +311,7 @@
             <li class="section-partners__item"><img alt="ICTOnline" src="#"></li>
         </ul>
     </section>
-    <section class="registration" id="registration">
+    <section class="container registration" id="registration">
         <div class="registration__wrap">
             <h2>Регистрация</h2>
             <form class="registration__form">
@@ -356,7 +361,7 @@
             </form>
         </div>
     </section>
-    <section class="location" id="location">
+    <section class="container location" id="location">
         <div class="location__wrap">
             <div class="row">
                 <div class="location__address">
@@ -391,7 +396,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="container gallery">
         <h2>Elma Day 2019</h2>
         <div class="gallery gallery_photo_old">
             <a href=""><img alt="1" src="#"></a>
@@ -407,7 +412,7 @@
         </div>
     </section>
 </main>
-<footer>
+<footer class="container">
     © ELMA, 2020
 </footer>
 </body>

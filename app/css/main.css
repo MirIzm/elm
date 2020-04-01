@@ -1,3 +1,41 @@
-body {
-  color: #e5e5e5;
-  background-color: #000000; }
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    position: relative;
+    background: #000000;
+    background-size: cover;
+    color: #ffffff;
+}
+.header li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.header__wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__logo{
+    width: 49%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.header__nav{
+    width: 49%;
+}
+
+.header__nav-list{
+    float: right;
+}
