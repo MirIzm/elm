@@ -107,6 +107,25 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     font-size: 30px;
 }
+
+.banner__list {
+    padding-left: 0;
+}
+.banner__list li{
+    position: relative;
+    padding-left: 30px;
+}
+.banner__item-left::before{
+    content: url("img/banner/date.svg");
+    position: absolute;
+}
+.banner__item-right::before{
+    content: url("/elm/app/img/banner/loc.svg");
+    position: absolute;
+}
+.banner__h1{
+    width: 800px;
+}
 .section-events {
     margin-left: 100px;
     margin-top: 59px;
@@ -127,6 +146,7 @@ h1, h2, h3, h4, h5, h6{
     justify-content: space-between;
 }
 .section-events__title-txt{
+    position: relative;
     width: 36%;
     font-size: 20px;
 }
@@ -190,22 +210,36 @@ h1, h2, h3, h4, h5, h6{
     .section-events__subtitle-list{
     }
 }
-
-.banner__list {
+.section-events__case-label ul{
     padding-left: 0;
 }
-.banner__list li{
-    position: relative;
-    padding-left: 30px;
+
+.section-events__case-label li{
+    display: inline-block;
 }
-.banner__item-left::before{
-    content: url("img/banner/date.svg");
-    position: absolute;
+
+@media (max-width: 767px) {
+    .section-events__case-label{
+        display: none;
+    }
 }
-.banner__item-right::before{
-    content: url("/elm/app/img/banner/loc.svg");
-    position: absolute;
+
+.section-users {
+    background: #f9f9f9;
+    font-family: 'Proxima', 'Arial', sans-serif;
+    font-size: 16px;
 }
-.banner__h1{
-    width: 800px;
+
+.section-users__wrap{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Proxima', 'Arial', sans-serif;
+    line-height: 1;
+}
+@media (max-width: 767px) {
+    .section-users__wrap{
+        padding-left: 24px;
+    }
 }
