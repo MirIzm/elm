@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .icon-telegram::before{
+  margin-left: -20px;
   position: absolute;
   content: url("/img/banner/telegram.svg");
 }
@@ -546,6 +547,8 @@ h1, h2, h3, h4, h5, h6{
 .registration{
   background: #000000;
   color: #ffffff;
+  background-image: url("/img/registration/regleft.svg");
+  background-repeat: no-repeat;
   font-size: 18px;
   font-family: Proxima, Arial, sans-serif;
   line-height: 1.5;
@@ -556,7 +559,6 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 26px;
   }
   &__wrap-form{
-    position: relative;
     padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -578,7 +580,6 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 10px;
     padding-left: 10px;
     vertical-align: center;
-
   }
   &__input--select{
     width: 662px;
@@ -668,4 +669,30 @@ h1, h2, h3, h4, h5, h6{
 
     }
   }
+}
+
+.gallery{
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  &__title{
+    padding-left: 223px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'Proxima', 'Arial', sans-serif;
+    font-weight: 600;
+  }
+  &_photo_old img{
+    width: 19%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+  }
+}
+.footer{
+  padding: 50px 0 30px 223px;
+  color: #ffffff;
+  background: #000000;
+  font-family: 'Proxima', 'Arial', sans-serif;
+  font-size: 20px;
 }
