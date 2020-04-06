@@ -391,9 +391,7 @@
                     </label>
                     <label class="registration__label">
                         <select class="registration__input registration__input--select" name="company_size" required="">
-                            <option class="form-popup__select-item" disabled="disabled" hidden="" selected="selected"
-                                    value="">Численность компании
-                            </option>
+                            <option class="form-popup__select-item" disabled="disabled" hidden="" selected="selected" value="">Численность компании</option>
                             <option value="<20">До 20</option>
                             <option value="20-100">20-100</option>
                             <option value="101-500">101-500</option>
@@ -403,43 +401,47 @@
                     </label>
                     <div class="registration__group-submit">
                         <label class="registration__label registration__label--checkbox">
-                            <input class="registration__input registration__input--checkbox visually-hidden" name="accept"
-                                   required="" type="checkbox">
+                            <input class="registration__input--checkbox" name="accept" required="" type="checkbox">
                             <span aria-label="Принимаю условия" class="registration__label--icon"></span> Я принимаю условия
-                            <a class="registration__accept-terms" href="/forms/user_agreement.html" rel="noopener"
-                               target="_blank">пользовательского соглашения</a> и <a class="registration__policy-confident"
-                                                                                     href="/forms/conf.html" rel="noopener"
-                                                                                     target="_blank">политики
-                            конфиденциальности</a> </label>
-                        <button class="btn-primary case-demonstration__submit registration__submit-unclosed" type="submit">
-                            Зарегистрироваться
-                        </button>
+                            <a class="registration__accept-terms light-blue-font" href="#" rel="noopener" target="_blank">пользовательского соглашения</a> и <a class="registration__policy-confident light-blue-font" href="#" rel="noopener" target="_blank">политики конфиденциальности</a> </label>
+                        <div class="button-elm"><a class="button-elm_light-blue" href="#">Зарегистрироваться</a></div>
                     </div>
                 </form>
             </div>
         </div>
     </section>
-    <section class="container location" id="location">
-        <div class="location__wrap">
-            <div class="row">
+    <section class="container" id="location">
+        <div class="location">
+            <div class="location__wrap">
                 <div class="location__address">
-                    <h2>Место проведения</h2>
-                    <p>Конференц-центр «Цифровое деловое пространство» Москва, ул. Покровка, 47</p>
-                    <img alt="цдп" src="#">
+                    <h2 class="title">Место проведения</h2>
+                    <p>Конференц-центр «Цифровое деловое пространство»</p>
+                    <p>Москва, ул. Покровка, 47</p>
+                    <img class="location__address_img" alt="цдп" src="img/location/cdp.png">
                     <div class="location__contacts">
                         <h3>Контакты</h3>
                         <ul class="location__contacts-list">
                             <li class="location__contacts-item">
-                                <p><strong>Елена Рябова</strong></p>
-                                <p>Руководитель проекта</p>
-                                <p>+7 (3412) 93-66-93 доб. 111</p>
-                                <a href="mailto:event@elma-bpm.ru">event@elma-bpm.ru</a>
+                                <img src="img/location/ryabova.svg">
+                                <div class="location__contacts-item-txt">
+                                    <p><strong>Елена Рябова</strong></p>
+                                    <div class="location__contacts-item-txt_subtitle">
+                                        <p>Руководитель проекта</p>
+                                        <p>+7 (3412) 93-66-93 доб. 111</p>
+                                        <a class="light-blue-font" href="mailto:event@elma-bpm.ru">event@elma-bpm.ru</a>
+                                    </div>
+                                </div>
                             </li>
                             <li class="location__contacts-item">
-                                <p><strong>Светлана Шутова</strong></p>
-                                <p>Руководитель проекта</p>
-                                <p>+7 (3412) 93-66-93 доб. 111</p>
-                                <a href="mailto:event@elma-bpm.ru">event@elma-bpm.ru</a>
+                                <img src="img/location/shutova.svg">
+                                <div class="location__contacts-item-txt">
+                                    <p><strong>Светлана Шутова</strong></p>
+                                    <div class="location__contacts-item-txt_subtitle">
+                                        <p>Руководитель проекта</p>
+                                        <p>+7 (3412) 93-66-93 доб. 111</p>
+                                        <a class="light-blue-font" href="mailto:event@elma-bpm.ru">event@elma-bpm.ru</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>

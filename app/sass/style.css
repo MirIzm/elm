@@ -120,6 +120,11 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
   }
 }
+@media (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+}
 .title {
   font-family: "Montserrat", Arial, sans-serif;
   font-style: normal;
@@ -539,6 +544,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 26px;
 }
 .registration__wrap-form {
+  position: relative;
+  padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -547,10 +554,97 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   width: 53%;
 }
+.registration__form p {
+  font-size: 16px;
+}
 .registration__input {
   width: 650px;
   height: 35px;
-  padding-bottom: 10px;
+  border: 1px #4b4b4b solid;
+  background: #000000;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  vertical-align: center;
+}
+.registration__input--select {
+  width: 662px;
+  height: 35px;
+}
+.registration__group-submit {
+  font-size: 14px;
+}
+
+.location {
+  background: #092b49;
+  color: #ffffff;
+  line-height: 1;
+  padding-bottom: 50px;
+}
+.location__wrap {
+  justify-content: space-between;
+  font-family: "Proxima", Arial, sans-serif;
+  font-size: 14px;
+}
+.location__address {
+  padding-left: 223px;
+  padding-top: 70px;
+  font-size: 20px;
+}
+.location__address_img {
+  width: 95%;
+}
+.location__map {
+  position: relative;
+  width: 47%;
+}
+.location__map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.location__contacts h3 {
+  font-size: 26px;
+}
+.location__contacts-list {
+  padding-left: 0;
+}
+.location__contacts-item {
+  list-style-type: none;
+}
+.location__contacts-item a {
+  text-decoration: none;
+}
+.location__contacts-item img {
+  margin-top: 23px;
+  margin-right: 15px;
+}
+.location__contacts-item-txt_subtitle {
+  font-size: 16px;
+  line-height: 0.5;
+}
+
+@media (max-width: 767px) {
+  .location__address {
+    padding-left: 24px;
+  }
+  .location__map {
+    display: block;
+  }
+  .location__address_img {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .location__wrap {
+    display: flex;
+  }
+  .location__contacts-list {
+    display: flex;
+  }
+  .location__contacts-item {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
