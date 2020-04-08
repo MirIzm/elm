@@ -1,4 +1,21 @@
-
+@font-face {
+  font-family: 'Graphik LC';
+  src: url('/fonts/Graphik-Bold-Web.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Graphik LC';
+  src: url('/fonts/Graphik-Regular-Web.woff2') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Graphik LC';
+  src: url('/fonts/Graphik-Regular-Web.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Graphik LC';
   src: url('/fonts/Graphik-Regular-Desktop.woff') format('woff');
@@ -62,10 +79,54 @@ h1, h2, h3, h4, h5, h6{
   text-decoration: none;
   color: #fff;
 }
-.pick-font{
-  padding: 5px 20px;
+.button-form {
+  width: 190px;
+  background-color: #1476CA;
+  border-radius: 4px;
+  padding: 15px 24px;
+  margin-top: 40px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #fff;
+}
+.button-elm-blue{
+  position: relative;
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  ::after{
+    position: absolute;
+    content: url("/img/btn/vector.svg");
+  }
+}
+.bpm-content-pick{
+  padding: 8px 10px;
   color: #000000;
   background-color: #FFBD2B;
+  width: 160px;
+  display: block;
+  transform: rotate(2.21deg);
+  &__span{
+    position: relative;
+    transform: rotate(-2.21deg);
+  };
+
+}
+.pick-font{
+  padding: 0 10px;
+  color: #000000;
+  background-color: #FFBD2B;
+}
+.free-font-top{
+  display: inline-block;
+  width: 263px;
+  transform: rotate(1.65deg);
+}
+.free-font-bottom{
+  display: inline-block;
+  width: 263px;
+  transform: rotate(-0.57deg);
 }
 .banner-bpm {
   margin-top: -55px;
@@ -104,7 +165,10 @@ h1, h2, h3, h4, h5, h6{
   &__title-part{
     font-family: Montserrat, Arial, sans-serif;
     font-size: 54px;
-    font-weight: 700;
+    font-weight: 800;
+    width: 450px;
+    transform: rotate(-2.66deg);
+    display: block;
   }
   &__subtitle {
     padding: 20px 0 30px 0;
@@ -330,51 +394,49 @@ h1, h2, h3, h4, h5, h6{
   &__wrap-text{
     width: 48%;
   }
+  &__list{
+    font-size: 18px;
+
+  }
   &__item{
     position: relative;
-    padding: 0 30px;
     list-style-type: none;
   }
   &__item_title{
-    margin-top: -25px;
+    width: 400px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.2;
   }
-  &__item_title_blue{
-    margin-top: -30px;
-    font-size: 24px;
-    font-family: Montserrat, Arial, sans-serif;
-    color: #048ad3;
-    text-transform: uppercase;
-    padding: 10px;
+  &__square1, &__square2, &__square3, &__square4, &__square5{
+    position: relative;
   }
-  &__square1, &__square2, &__square3{
-    left: 265px;
-    top: -41px;
+  &__square1::before{
+    right: -80px;
     position: absolute;
-    width: 62.73px;
-    height: 62.73px;
-    background: #D3E4F2;
-    transform: rotate(12.79deg);
+    content: url("/img/content/1.svg");
   }
-  &__square1::after{
+  &__square2::before{
+    right: -80px;
     position: absolute;
-    content: url("/img/content/square1.svg");
-    transform: rotate(-12.79deg);
-    margin-left: 28px;
-    top: -11px;
+    content: url("/img/content/2.svg");
   }
-  &__square2::after{
+  &__square3::before{
+    right: -80px;
     position: absolute;
-    content: url("/img/content/square2.svg");
-    transform: rotate(-12.79deg);
-    margin-left: 21px;
-    top: -10px;
+    content: url("/img/content/3.svg");
   }
-  &__square3::after{
+  &__square4::before{
+    right: -80px;
     position: absolute;
-    content: url("/img/content/square3.svg");
-    transform: rotate(-12.79deg);
-    margin-left: 16px;
-    top: -6px;
+    content: url("/img/content/5.svg");
+  }
+  &__square5::before{
+    right: -80px;
+    position: absolute;
+    content: url("/img/content/5.svg");
   }
 
 }
@@ -385,12 +447,12 @@ h1, h2, h3, h4, h5, h6{
       padding-bottom: 50px;
       padding-left: 0;
       display: flex;
+      justify-content: space-between;
     }
     &__item{
-      width: 33%;
-      margin-right: 20px;
+      width: 43%;
+      margin-right: 50px;
     }
-
   }
 }
 .downloads-demo__label select:invalid{
@@ -474,7 +536,7 @@ h1, h2, h3, h4, h5, h6{
     }
   }
   &__group-submit{
-    font-size: 14px;
+    font-size: 16px;
     label{
       color: #000000;
     }
