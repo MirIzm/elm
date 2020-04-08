@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-    <section class="banner-bpm container">
+    <section class="banner-bpm">
         <div class="banner-bpm__wrap">
             <div class="banner-bpm__header">
                 <img src="img/logo.svg" alt="Еlma" width="144">
@@ -20,7 +20,7 @@
             <a href="#" data-target="#" role="button" class="btn-bpm">Узнать как</a>
         </div>
         <div class="banner-bpm__img">
-            <img src="img/bg-logo.svg" alt="logo" width="849">
+            <img src="img/bg-logo.svg" alt="logo" width="677">
         </div>
     </section>
     <div class=""></div>
@@ -318,18 +318,19 @@
                             <span class="main-form__description">Ваша должность</span>
                         </label>
                         <label class="main-form__label">
-                            <span class="main-form__description">Численность компании</span>
                             <select id="company_size" name="company_size" class="main-form__input" onchange="actionDescription(this)" required="">
+                                <option value=""></option>
                                 <option value="20">До 20</option>
                                 <option value="20-100">20-100</option>
                                 <option value="101-500">101-500</option>
                                 <option value="501-2000">501-2000</option>
                                 <option value="2000+">Более 20000</option>
                             </select>
+                            <span class="main-form__description">Численность компании</span>
                         </label>
                     <div class="registration__group-submit">
                         <label class="registration__label--checkbox">
-                         <input class="registration__input--checkbox" name="accept" required="" type="checkbox">
+                         <input class="registration__input--checkbox visually-hidden" name="accept" required="" type="checkbox" >
                          <span class="registration__label--icon"></span> Я принимаю условия
                          <a class="registration__accept-terms light-blue-link" href="#" rel="noopener" target="_blank">пользовательского соглашения</a> и <a class="registration__policy-confident light-blue-link" href="#" rel="noopener" target="_blank">политики конфиденциальности</a> </label>
                     </div>
@@ -340,5 +341,6 @@
         </div>
     </section>
 </main>
+<script type="text/javascript" src="js/form.js"></script>
 </body>
 </html>

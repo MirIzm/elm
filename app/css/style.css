@@ -133,7 +133,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff; }
   .banner-bpm__wrap {
     transform: skewY(3.66deg);
-    padding: 45px 0 100px 210px; }
+    width: 100%;
+    max-width: 1093px;
+    margin: 0 auto; }
     .banner-bpm__wrap a {
       position: relative;
       padding-left: 40px; }
@@ -561,6 +563,38 @@ h1, h2, h3, h4, h5, h6 {
     .registration__group-submit label {
       color: #000000; }
 
+.registration__label--icon {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  margin-bottom: -2px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #d1d1d1; }
+
+.registration__input--checkbox:checked + .registration__label--icon::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 7px;
+  width: 7px;
+  height: 2px;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  background-color: #048ad3; }
+
+.registration__input--checkbox:checked + .registration__label--icon::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 1px;
+  width: 11px;
+  height: 2px;
+  -webkit-transform: rotate(-59deg);
+  transform: rotate(-59deg);
+  background-color: #048ad3; }
+
 .main-form__label {
   position: relative;
   display: block;
@@ -571,6 +605,8 @@ h1, h2, h3, h4, h5, h6 {
   resize: none; }
 
 .main-form__input {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 50px #fff;
   border-radius: 4px;
   background-color: transparent;
   color: #000;
@@ -580,7 +616,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 54px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 1px;
   font-size: 18px;
   line-height: 24px; }
 
