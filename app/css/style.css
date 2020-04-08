@@ -95,9 +95,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-size: 20px;
   color: #ffffff; }
-  .button-elm-blue ::after {
-    position: absolute;
-    content: url("/img/btn/vector.svg"); }
 
 .bpm-content-pick {
   padding: 8px 10px;
@@ -590,28 +587,28 @@ h1, h2, h3, h4, h5, h6 {
 .main-form__input:hover,
 .main-form__input:focus,
 .main-form__input:active {
-  border: 1px solid #c43b8b; }
+  border: 1px solid #e4e4e4; }
 
 .main-form__input:focus + .main-form__description {
   top: 0;
   left: 15px;
   padding: 0 2px;
-  background-color: #3DB3C5;
+  background-color: #fff;
   font-size: 14px;
   line-height: 17px;
-  color: #C43B8B; }
+  color: #3187d1; }
 
 .main-form__input.active {
-  border: 1px solid #c43b8b; }
+  border: 1px solid #3187d1; }
 
 .main-form__input.active + .main-form__description {
   top: 0;
   left: 15px;
   padding: 0 2px;
-  background-color: #3DB3C5;
+  background-color: #fff;
   font-size: 14px;
   line-height: 17px;
-  color: #C43B8B; }
+  color: #3187d1; }
 
 .main-form__description {
   position: absolute;
@@ -628,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   font-size: 14px;
   line-height: 17px;
-  color: #C43B8B; }
+  color: #3187d1; }
 
 .main-form__label--checkbox {
   padding-right: 0;
