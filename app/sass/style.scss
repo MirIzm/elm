@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6{
 .btn-bpm{
   border: 1px #ffffff solid;
   border-radius: 4px;
-  padding: 11px 24px;
+  padding: 15px 24px;
   text-decoration: none;
   color: #fff;
 }
@@ -68,6 +68,9 @@ h1, h2, h3, h4, h5, h6{
   background-color: #FFBD2B;
 }
 .banner-bpm {
+  margin-top: -55px;
+  transform: skewY(-3.66deg);
+  padding-top: 51px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -77,8 +80,18 @@ h1, h2, h3, h4, h5, h6{
   //transform: skewY(-2.64deg);
   //margin-top: -40px;
   &__wrap {
+    transform: skewY(3.66deg);
     //transform: skewY(2.64deg);
-    padding: 45px 0 100px 210px;
+      padding: 45px 0 100px 210px;
+    a{
+      position: relative;
+      padding-left: 40px;
+    }
+    a::before{
+      position: absolute;
+      content: url("/img/banner/arrow.svg");
+      left: 14px;
+    }
   }
   &__title {
     font-family: Montserrat, Arial, sans-serif;
@@ -98,8 +111,12 @@ h1, h2, h3, h4, h5, h6{
     width: 620px;
   }
   &__img{
+    transform: skewY(3.66deg);
     position: absolute;
     right: 0;
+    img{
+      margin-top: 29px;
+    }
   }
 
 }
@@ -110,6 +127,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
 .problem-bpm {
+  padding-top: 80px;
   &__title {
     padding-top: 50px;
   }
@@ -264,7 +282,16 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
   }
   &__text{
+    position: relative;
     width: 60%;
+    a{
+      padding-left: 50px;
+    }
+    a::before{
+      position: absolute;
+      content: url("/img/up/play.svg");
+      left: 14px;
+    }
   }
   &__wrap-top{
     position: relative;
