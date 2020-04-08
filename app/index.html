@@ -317,30 +317,27 @@
                             <input class="main-form__input" type="text" name="lastname" onchange="actionDescription(this)" required="">
                             <span class="main-form__description">Ваша должность</span>
                         </label>
-                        <label class="downloads-demo__label">
-                            <span class="downloads-demo__label-value">Численность компании</span>
-                            <select id="company_size" name="company_size" class="bpm-form__input">
+                        <label class="main-form__label">
+                            <span class="main-form__description">Численность компании</span>
+                            <select id="company_size" name="company_size" class="main-form__input" onchange="actionDescription(this)" required="">
                                 <option value="20">До 20</option>
                                 <option value="20-100">20-100</option>
                                 <option value="101-500">101-500</option>
                                 <option value="501-2000">501-2000</option>
                                 <option value="2000+">Более 20000</option>
-                            </select></label>
-
-                    </form>
-
+                            </select>
+                        </label>
                     <div class="registration__group-submit">
                         <label class="registration__label--checkbox">
-                            <input class="registration__input--checkbox" name="accept" required="" type="checkbox">
-                            <span class="registration__label--icon"></span> Я принимаю условия
-                            <a class="registration__accept-terms light-blue-link" href="#" rel="noopener" target="_blank">пользовательского соглашения</a> и <a class="registration__policy-confident light-blue-link" href="#" rel="noopener" target="_blank">политики конфиденциальности</a> </label>
-                        <button class="button-form button-elm-blue" type="submit">Оставить заявку</button>
+                         <input class="registration__input--checkbox" name="accept" required="" type="checkbox">
+                         <span class="registration__label--icon"></span> Я принимаю условия
+                         <a class="registration__accept-terms light-blue-link" href="#" rel="noopener" target="_blank">пользовательского соглашения</a> и <a class="registration__policy-confident light-blue-link" href="#" rel="noopener" target="_blank">политики конфиденциальности</a> </label>
                     </div>
-                </div>
+                    <button class="button-form button-elm-blue" type="submit">Оставить заявку</button>
                 </form>
             </div>
         </div>
-
+        </div>
     </section>
 </main>
 </body>
