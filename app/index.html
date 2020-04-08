@@ -11,7 +11,7 @@
     <section class="banner-bpm container">
         <div class="banner-bpm__wrap">
             <div class="banner-bpm__header">
-                <img src="img/logo.svg" alt="Еlma" width="125">
+                <img src="img/logo.svg" alt="Еlma" width="144">
             </div>
             <h1 class="banner-bpm__title">ELMA BPM – <br>у бизнес-процессов</h1>
             <span class="banner-bpm__title-part pick-font">нет карантина</span>
@@ -199,9 +199,18 @@
                     С помощью этого инструмента вы будете готовы к любым колебаниям рынка.</p>
                 <p class="bpm-content-pick"><span class="bpm-content-pick__span">Меняйся легче!</span></p>
             </div>
-            <div class="bpm-content__wrap-img">1
-                <img src="#" alt="elma4">
-            </div>
+
+                <div class="change-easier__animation active">
+                    <img class="change-easier__layer-main" src="/img/elma4/1.svg" width="520" height="330" alt="ELMA 4">
+                    <img class="change-easier__layer-one" src="/img/elma4/2.svg" width="480" height="304" alt="ELMA 4">
+                    <img class="change-easier__layer-two" src="/img/elma4/3.svg" width="488" height="307" alt="ELMA 4">
+                    <img class="change-easier__layer-three" src="/img/elma4/4.svg" width="503" height="310" alt="ELMA 4">
+                    <img class="change-easier__layer-fourth" src="/img/elma4/5.svg" width="483" height="302" alt="ELMA 4">
+                    <img class="change-easier__layer-five" src="/img/elma4/6.svg" width="520" height="310" alt="ELMA 4">
+                    <img class="change-easier__layer-six" src="/img/elma4/7.svg" width="487" height="307" alt="ELMA 4">
+                    <img class="change-easier__layer-seven" src="/img/elma4/8.svg" width="503" height="310" alt="ELMA 4">
+                </div>
+
         </div>
         <ul class="bpm-content__list content-boxs">
             <li class="bpm-content__item">
@@ -272,8 +281,11 @@
                     к любым колебаниям рынка. Смотрите презентацию ELMA4 онлайн и меняйтесь легче!</p>
                 <a href="#" data-target="#demoVersionModal" role="button" class="btn-bpm">Смотреть презентацию</a>
             </div>
-            <div class="bpm-up__img">1
-                <img src="#" alt="ELma">
+            <div class="bpm-up__img">
+                <div class="change-easier__preview-wrap play" data-player-name="player1" onclick="loadPlayer(this)">
+                    <img class="change-easier__preview stub" src="/upload/ED2020/main-preview.jpg" alt="ED2020" width="479" height="302" style="display: none;">
+                    <iframe id="player1" data-youtube="7tkycCom1lE" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="auto" height="100%" src="https://www.youtube.com/embed/7tkycCom1lE?loop=1&amp;playlist=7tkycCom1lE&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.elma-bpm.ru&amp;widgetid=1"></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -313,7 +325,7 @@
                             <input class="registration__input--checkbox" name="accept" required="" type="checkbox">
                             <span class="registration__label--icon"></span> Я принимаю условия
                             <a class="registration__accept-terms light-blue-link" href="#" rel="noopener" target="_blank">пользовательского соглашения</a> и <a class="registration__policy-confident light-blue-link" href="#" rel="noopener" target="_blank">политики конфиденциальности</a> </label>
-                        <div class="button-form"><a class="button-elm-blue" href="#">Оставить заявку</a></div>
+                        <button class="button-form button-elm-blue" type="submit">Оставить заявку</button>
                     </div>
                 </form>
             </div>
