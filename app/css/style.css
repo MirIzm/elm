@@ -132,6 +132,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #552790;
   color: #ffffff; }
   .banner-bpm__wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
     transform: skewY(3.66deg);
     width: 100%;
     max-width: 1093px;
@@ -163,9 +165,8 @@ h1, h2, h3, h4, h5, h6 {
   .banner-bpm__img {
     transform: skewY(3.66deg);
     position: absolute;
-    right: 0; }
-    .banner-bpm__img img {
-      margin-top: 29px; }
+    right: 0;
+    bottom: -33px; }
 
 .exlips {
   transform: translateY(-317px); }

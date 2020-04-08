@@ -139,6 +139,8 @@ h1, h2, h3, h4, h5, h6{
   color: #ffffff;
 
   &__wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
     transform: skewY(3.66deg);
     //transform: skewY(2.64deg);
     width: 100%;
@@ -179,9 +181,8 @@ h1, h2, h3, h4, h5, h6{
     transform: skewY(3.66deg);
     position: absolute;
     right: 0;
-    img{
-      margin-top: 29px;
-    }
+    bottom: -33px;
+
   }
 
 }
