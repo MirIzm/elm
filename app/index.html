@@ -294,31 +294,40 @@
             <h2 class="title__block">Попробуйте ELMA <span class="pick-font free-font-bottom">бесплатно</span></h2>
             <p>Оставьте заявку, чтобы задать вопросы о решении<br> и получить бесплатный доступ к демостенду</p>
             <div class="registration__wrap-form">
-                <form class="registration__form">
-                    <label class="registration__label" for="name">Ваше имя и фамилия</label>
-                        <input class="registration__input" id="name" name="name" placeholder="Имя и фамилия" required type="text">
+                <div class="register-form-outer">
+                    <form class="register-form main-form">
+                        <input type="hidden" name="action" value="meetup_devups">
+                        <label class="main-form__label">
+                            <input class="main-form__input" type="text" name="firstname" onchange="actionDescription(this)" required="">
+                            <span class="main-form__description">Ваше имя и фамилия</span>
+                        </label>
+                        <label class="main-form__label">
+                            <input class="main-form__input" type="tel" name="phone" onchange="actionDescription(this)" required="">
+                            <span class="main-form__description">Телефон</span>
+                        </label>
+                        <label class="main-form__label">
+                            <input class="main-form__input" type="email" name="email" onchange="actionDescription(this)" required="">
+                            <span class="main-form__description">Элекронная почта</span>
+                        </label>
+                        <label class="main-form__label">
+                            <input class="main-form__input" type="text" name="company_name" onchange="actionDescription(this)" required="">
+                            <span class="main-form__description">Компания</span>
+                        </label>
+                        <label class="main-form__label">
+                            <input class="main-form__input" type="text" name="lastname" onchange="actionDescription(this)" required="">
+                            <span class="main-form__description">Ваша должность</span>
+                        </label>
+                        <label class="downloads-demo__label">
+                            <span class="downloads-demo__label-value">Численность компании</span>
+                            <select id="company_size" name="company_size" class="bpm-form__input">
+                                <option value="20">До 20</option>
+                                <option value="20-100">20-100</option>
+                                <option value="101-500">101-500</option>
+                                <option value="501-2000">501-2000</option>
+                                <option value="2000+">Более 20000</option>
+                            </select></label>
 
-                    <label class="registration__label" for="phone">Телефон</label>
-                        <input class="registration__input" id="phone" name="phone" placeholder="Телефон" required type="tel">
-
-                    <label class="registration__label" for="email">Электронная почта</label>
-                    <input class="registration__input" id="email" name="email" placeholder="Электронная почта" required type="email">
-
-                    <label class="registration__label" for="company_name">Компания</label>
-                        <input class="registration__input" id="company_name" name="company_name" placeholder="Компания" required type="text">
-
-                    <label class="registration__label" for="jobposition">Ваша должность</label>
-                        <input class="registration__input" id="jobposition" name="jobposition" placeholder="Должность" required type="text">
-
-                    <label class="registration__label" for="company_size">Численность компании</label>
-                        <select class="registration__input registration__input--select" id="company_size" name="company_size" required="">
-                            <option class="form-popup__select-item" disabled="disabled" hidden="" selected="selected" value="">Численность компании</option>
-                            <option value="<20">До 20</option>
-                            <option value="20-100">20-100</option>
-                            <option value="101-500">101-500</option>
-                            <option value="501-2000">501-2000</option>
-                            <option value="2000+">Более 2000</option>
-                        </select>
+                    </form>
 
                     <div class="registration__group-submit">
                         <label class="registration__label--checkbox">
@@ -327,9 +336,11 @@
                             <a class="registration__accept-terms light-blue-link" href="#" rel="noopener" target="_blank">пользовательского соглашения</a> и <a class="registration__policy-confident light-blue-link" href="#" rel="noopener" target="_blank">политики конфиденциальности</a> </label>
                         <button class="button-form button-elm-blue" type="submit">Оставить заявку</button>
                     </div>
+                </div>
                 </form>
             </div>
         </div>
+
     </section>
 </main>
 </body>
