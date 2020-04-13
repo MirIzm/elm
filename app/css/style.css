@@ -819,28 +819,39 @@ h1, h2, h3, h4, h5, h6 {
     display: none; }
   .bpm-content {
     padding-top: 30px; }
+  .bpm-content__list {
+    padding-left: 20px; }
   .bpm-content__item {
     padding-top: 40px;
     padding-right: 20px; }
   .bpm-content__item_title {
-    width: 325px;
+    width: 264px;
     font-size: 33px; }
   .bpm-content__item_subtitle {
     font-size: 16px; }
   .bpm-content__wrap-text {
+    padding-left: 20px;
     width: 100%; }
+  .bpm-content__square1::before,
+  .bpm-content__square2::before,
+  .bpm-content__square3::before,
+  .bpm-content__square4::before,
+  .bpm-content__square5::before {
+    top: -12px; }
   .problem-bpm {
     padding-top: 0; }
   .problem-bpm__subtitle {
     display: none; }
   .problem-bpm__item-title {
-    width: 274px; }
+    font-size: 18px;
+    width: 246px; }
   .problem-bpm__item-wrap {
     font-size: 16px; }
   .problem-bpm__item-left, .problem-bpm__item-right {
     width: 84%; }
   .problem-bpm__circle {
-    left: 264px;
+    top: 31px;
+    left: 244px;
     width: 54px;
     height: 54px; }
   .error-circle::after {
